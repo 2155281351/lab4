@@ -1,0 +1,33 @@
+digraph "fsm" {
+label="fsm";
+rankdir="LR";
+remincross=true;
+n5 [ shape=octagon, label="key_flag", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="pic_state", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="sys_rst_n", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="vga_clk", color="black", fontcolor="black" ];
+c13 [ shape=record, label="{{<p9> ARST|<p10> CLK|<p11> D}|$492\n$adff|{<p12> Q}}" ];
+v0 [ label="2'00" ];
+v1 [ label="4'0110" ];
+c18 [ shape=record, label="{{<p14> A|<p15> B|<p16> S}|$476\n$pmux|{<p17> Y}}" ];
+x2 [ shape=record, style=rounded, label="<s1> 0:0 - 1:1 |<s0> 0:0 - 0:0 " ];
+x2:e -> c18:p16:w [arrowhead=odiamond, arrowtail=odiamond, dir=both, color="black", style="setlinewidth(3)", label=""];
+v3 [ label="2'01" ];
+c19 [ shape=record, label="{{<p14> A|<p15> B}|$477_CMP0\n$eq|{<p17> Y}}" ];
+c20 [ shape=record, label="{{<p14> A}|$478_CMP0\n$logic_not|{<p17> Y}}" ];
+c21 [ shape=record, label="{{<p14> A|<p15> B|<p16> S}|$479\n$mux|{<p17> Y}}" ];
+c21:p17:e -> c13:p11:w [color="black", style="setlinewidth(3)", label=""];
+c18:p17:e -> c21:p15:w [color="black", style="setlinewidth(3)", label=""];
+c19:p17:e -> x2:s0:w [color="black", label=""];
+c20:p17:e -> x2:s1:w [color="black", label=""];
+n5:e -> c21:p16:w [color="black", label=""];
+c13:p12:e -> n6:w [color="black", style="setlinewidth(3)", label=""];
+n6:e -> c19:p14:w [color="black", style="setlinewidth(3)", label=""];
+n6:e -> c20:p14:w [color="black", style="setlinewidth(3)", label=""];
+n6:e -> c21:p14:w [color="black", style="setlinewidth(3)", label=""];
+n7:e -> c13:p9:w [color="black", label=""];
+n8:e -> c13:p10:w [color="black", label=""];
+v0:e -> c18:p14:w [color="black", style="setlinewidth(3)", label=""];
+v1:e -> c18:p15:w [color="black", style="setlinewidth(3)", label=""];
+v3:e -> c19:p15:w [color="black", style="setlinewidth(3)", label=""];
+}

@@ -1,0 +1,152 @@
+$date
+	Mon Nov  9 14:21:20 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module lab4_vga_tb $end
+$var reg 1 ! sys_rst_n $end
+$upscope $end
+$scope module lab4_vga_tb $end
+$var reg 1 " key_in $end
+$upscope $end
+$scope module lab4_vga_tb $end
+$var wire 1 # key_up_flag $end
+$upscope $end
+$scope module lab4_vga_tb $end
+$var wire 1 $ key_flag $end
+$upscope $end
+$scope module lab4_vga_tb $end
+$var wire 1 % wait_release $end
+$upscope $end
+$scope module lab4_vga_tb $end
+$var wire 2 & pic_state [1:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+1%
+0$
+1#
+1"
+0!
+$end
+#200
+1!
+#20000170
+0%
+#25000200
+0"
+#45000250
+1$
+0#
+#45000290
+0$
+b1 &
+#55000200
+1"
+#75000250
+1#
+#85000200
+0"
+#105000250
+1$
+0#
+#105000290
+0$
+b10 &
+#115000200
+1"
+#135000250
+1#
+#145000200
+0"
+#165000250
+1$
+0#
+#165000290
+0$
+b0 &
+#175000200
+1"
+#195000250
+1#
+#205000200
+0"
+#206000200
+1"
+#206500200
+0"
+#207300200
+1"
+#207900200
+0"
+#227900250
+1$
+0#
+#227900290
+0$
+b1 &
+#237900200
+1"
+#257900250
+1#
+#267900200
+0"
+#287900250
+1$
+0#
+#287900290
+0$
+b10 &
+#367900200
+1"
+#387900250
+1#
+#397900200
+b0 &
+1%
+0!
+#398900200
+1!
+#418900170
+0%
+#423900200
+0"
+#443900250
+1$
+0#
+#443900290
+0$
+b1 &
+#453900200
+1#
+1%
+b0 &
+0!
+#454900200
+1!
+#474900250
+0#
+#484900200
+1"
+#504900250
+1#
+0%
+#514900200
+0"
+#534900250
+1$
+0#
+#534900290
+0$
+b1 &
+#544900200
+1"
+#564900250
+1#
+#574900200
